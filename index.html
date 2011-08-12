@@ -1,0 +1,15 @@
+---
+layout: default
+meta_description: GMA Investments
+meta_keywords: Gary, Abram, GMA, Investments
+---
+<p>Welcome to GMA Investments. Currently this web site is under construction. Sorry for the inconvenience.</p>
+<article>
+    {% for post in site.posts offset: 0 limit: 20 %}
+      <div class="post">  
+      <h2><a href="{{ post.id }}/">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
+      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+      </div>
+    {% endfor %}
+</article>

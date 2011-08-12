@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<title>GMA Investments{% if page.title %}: {{ page.title }}{% endif %}</title>
+    <link rel="stylesheet" href="/stylesheets/default.css" />
+    {% if page.code_style %}<link href="/css/{{ page.code_style }}.css?{{site.time}}" rel="stylesheet" />{% endif %}
+    <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
+    {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
+    {% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
+    <meta name="author" content="Steve Woolley" />
+</head>
+<body>
+<div class="page {% if page.location %}{{ page.location }}{% endif %}">
+    <div class="header">
+        <header>
+            <div class="logo">
+		<a href="http://gmainvest.com/">Under Construction</a>
+            </div>
+            <img src="/images/image003.jpg" alt="GMA Investments" title="GMA Investments">
+        </header>
+    </div>
+    <div class="content line">
+        {{ content }}
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2010, <a href="http://gmainvest.com">GMA Investments, LLC.</a> All rights reserved.</p>
+        <div>
+    </footer>
+</div>
+</body>
+</html>
